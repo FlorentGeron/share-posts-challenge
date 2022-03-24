@@ -1,16 +1,32 @@
-<h1>Posts#show</h1>
-<p>Find me in app/views/posts/show.html.erb</p>
+
 
 <div class= "container">
-  <%=@post.title%>
-  par <%=@post.user.nickname%> le <%=@post.created_at.strftime("%d.%m.%y")%>
-  <%=@post.content%>
-  <%=link_to "Commenter", comments_new_path%>
-  <%=@post.comments.each do |comment|%>
-    <%= link_to comments_show(comment) do%>
-      <%=comment.user.nickname%> le <%=comment.created_at.strftime("%d.%m.%y")%>
-      <%=comment.content%>
-    <% end %>
-  <%end%>
-
+  <div class="page-wrapper">
+    <%= link_to "Retour à la liste", posts_path%>
+    <div class="post-details">
+      <div class= post-view>
+        <div class="post-title"><%=@post.title%></div>
+        par <strong> <%=@post.user.nickname%> </strong> le <%=@post.created_at.strftime("%d.%m.%y")%>
+        <%=link_to "Article Source", @post.url%>
+        <div class="post-content">
+          <%=@post.content%>
+        </div>
+        <div class="comment-section">
+          <%=@post.comments.count%> Commentaires :
+          <%@post.comments.each do |comment|%>
+            <div class="comment-preview">
+              <%=comment.user.nickname%> le <%=comment.created_at.strftime("%d.%m.%y")%>
+              <%=comment.content%>
+            </div>
+          <%end%>
+        </div>
+        <div class= "new-comment">
+          <%= simple_form_for [@post, @comment] do |f| %>
+            <%= f.input :content, as: :text, label: "Ajouter votre Grain de Sel" %>
+            <%= f.submit "Commenter", class: "btn btn-ghost" %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
