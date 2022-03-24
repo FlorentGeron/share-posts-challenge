@@ -37,6 +37,7 @@ post1 = Post.new(
   L’individu a été signalé au centre opérationnel de la gendarmerie de l’Hérault par un automobiliste, intrigué après avoir croisé l'engin de chantier de plusieurs tonnes. Le rouleau compresseur rouler à moins de 15km/h et se dirigeait vers le rond point de l’autoroute A9-A709.
   Arrivés sur les lieux, les militaires ont immédiatement constaté l’anormalité de la situation. Le rouleau compresseur avec lequel le trentenaire se déplaçait avait bien été dérobé quelques minutes plus tôt par ce dernier, fortement alcoolisé.",
   url: "https://france3-regions.francetvinfo.fr/occitanie/herault/montpellier/ivre-il-vole-un-rouleau-compresseur-de-plusieurs-tonnes-pour-rejoindre-le-tramway-2456473.html",
+  user: User.first
 )
 post1.save!
 
