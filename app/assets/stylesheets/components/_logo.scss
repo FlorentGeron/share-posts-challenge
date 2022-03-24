@@ -1,0 +1,32 @@
+.logo {
+  font-size: 4em;
+  color: $bacchus-primary;
+  text-align: center;
+}
+
+.ivre {
+  font-family: $ivre-font;
+  font-size: 2em;
+}
+
+.news {
+  font-family: $news-font;
+}
+
+.baseline {
+  text-align: center;
+  color: $bacchus-primary;
+  font-family: $news-font;
+}
+
+.button-container {
+  display:flex;
+  justify-content: center;
+  text-align:center;
+}
+
+.button-container > .button-home {
+  margin-top: 24px;
+  flex-grow: 1;
+  max-width: 30vw;
+}

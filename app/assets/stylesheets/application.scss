@@ -15,7 +15,15 @@
 .page-wrapper {
   justify-content: center;
   margin: 0 auto;
-  width: 60vw;
+  width: 80vw;
   min-height: 80vh;
   padding: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
 }
