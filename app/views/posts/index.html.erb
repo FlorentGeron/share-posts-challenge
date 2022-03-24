@@ -1,2 +1,14 @@
-<h1>Posts#index</h1>
-<p>Find me in app/views/posts/index.html.erb</p>
+<h1>Liste des dernières publications</h1>
+
+<div class= "container">
+  <% @posts.each do |post|%>
+    <%= link_to post_path(post) do%>
+      <div class= "post-preview">
+        <div class="post-title"><%=post.title%></div>
+        Par <%=post.user.nickname%>
+        le <%=post.created_at.strftime("%d %m %y")%>
+        <%= post.comments.count%> commentaires
+      </div>
+    <% end %>
+  <%end%>
+</div>

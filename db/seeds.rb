@@ -79,4 +79,36 @@ post5.save!
 
 puts "Created #{Post.count} #{"post".pluralize(Post.count)} for you"
 
+puts "creating comments now"
+
+comment1 = Comment.new(
+  user: User.last
+  post: Post.first
+  content: "Amazing!"
+)
+comment1.save!
+
+comment2= Comment.new(
+  user: User.first
+  post: Post.first
+  content: "J'adore!"
+)
+comment2.save!
+
+comment3= Comment.new(
+  user: User.last
+  post: Post.last
+  content: "J'adore!"
+)
+comment3.save!
+
+comment4= Comment.new(
+  user: User.last
+  post: Post.first
+  content: "Encore!"
+)
+comment4.save!
+
+puts "Created #{Comment.count} #{"comment".pluralize(Comment.count)} for you"
+
 puts "That's All, Folks!"
