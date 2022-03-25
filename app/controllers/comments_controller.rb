@@ -9,6 +9,7 @@ class CommentsController < ApplicationController
     @comment.user = current_user
     if @comment.save
       redirect_to post_path(@comment.post)
+      flash.alert = "Hic! Merci pour votre commentaire!"
     else
       render 'new'
     end
