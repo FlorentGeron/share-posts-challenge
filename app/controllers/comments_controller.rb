@@ -12,7 +12,7 @@ class CommentsController < ApplicationController
       flash.alert = "Hic! Merci pour votre commentaire!"
     else
       redirect_to post_path(@comment.post)
-      flash.alert = "Argh! Merci de REMPLIR le commentaire!"
+      flash.alert = "Ivre, il oublie de REMPLIR le commentaire..."
     end
   end
 
