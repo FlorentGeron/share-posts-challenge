@@ -32,29 +32,28 @@ puts "Created #{User.count} #{"user".pluralize(User.count)} for you"
 puts "Now, I will seed some posts"
 
 post1 = Post.new(
-  title: "Ukraine : La protection temporaire, un mécanisme de réponse en cas d’afflux massif de personnes",
-  content: "Le 24 février 2022, la Russie a attaqué l’Ukraine, dans l’objectif d’une opération rapide de prise du territoire, après avoir déclaré indépendantes deux régions uukrainiennes (Dontesk et Louhansk). Toutes les personnes ayant fui l’Ukraine à compter de cette même date, le 24 février 2022, peuvent bénéficier d’une protection temporaire.",
-  url: "https://www.actu-juridique.fr/etrangers/ukraine-la-protection-temporaire-un-mecanisme-de-reponse-en-cas-dafflux-massif-de-personnes/",
+  title: "Ivre, il vole un rouleau compresseur de plusieurs tonnes pour rejoindre le tramway",
+  content: "Le 2 février, il est environ 22h15, quand un Montpelliérain âgé de 35 ans est intercepté par les gendarmes du peloton d’autoroute de Poussan (34) aux portes ouest de Montpellier alors qu’il conduisait un rouleau compresseur.
+  L’individu a été signalé au centre opérationnel de la gendarmerie de l’Hérault par un automobiliste, intrigué après avoir croisé l'engin de chantier de plusieurs tonnes. Le rouleau compresseur rouler à moins de 15km/h et se dirigeait vers le rond point de l’autoroute A9-A709.
+  Arrivés sur les lieux, les militaires ont immédiatement constaté l’anormalité de la situation. Le rouleau compresseur avec lequel le trentenaire se déplaçait avait bien été dérobé quelques minutes plus tôt par ce dernier, fortement alcoolisé.",
+  url: "https://france3-regions.francetvinfo.fr/occitanie/herault/montpellier/ivre-il-vole-un-rouleau-compresseur-de-plusieurs-tonnes-pour-rejoindre-le-tramway-2456473.html",
   user: User.first
 )
 post1.save!
 
 post2 = Post.new(
-  title: "Retour sur 10 nouvelles espèces totalement inutiles découvertes en 2021",
-  content: "Plus de huit millions d'espèces animales et végétales sont aujourd'hui répertoriées aux quatre coins de la Terre. Pourtant, il en reste encore des milliers dont on ne soupçonne pas l'existence. La preuve : chaque année, l'inventaire mondial ne cesse de s'allonger au fil des découvertes scientifiques. Et 2021 n'a pas fait exception.
-
-  Au cours des douze derniers mois, ce sont des centaines de nouvelles espèces qui sont venues enrichir la liste. Au Natural History Museum de Londres, rien que cette année par exemple, les scientifiques ont participé à la description de pas moins de 552 espèces, selon un récent communiqué de l'institution.
-
-  Parmi les nouveaux arrivants, figurent des animaux comme des végétaux qui ont, pour certains, montré de remarquables apparences ou de fascinantes capacités. Telle que ce tabac sauvage tueur d'insectes retrouvé sur une autoroute en Australie ou cette adorable 'grenouille chocolat' identifiée en Nouvelle-Guinée.",
-  url: "https://www.geo.fr/environnement/retour-sur-10-nouvelles-especes-decouvertes-en-2021-207683",
+  title: "Ivre, il emprunte une piste de ski pour éviter les contrôles d'alcoolémie",
+  content: "Un pisteur du domaine skiable de Sur-Lyand - Grand Colombier, située sur la commune de Corbonod dans l'Ain, a eu la surprise de tomber sur un 4x4 au beau milieu d'une des pistes de ski nordique de sa station, samedi après-midi 19 février, rapporte le quotidien Le Progrès.
+  D'abord, 'très cordial', les occupants de la voiture, trois adultes et trois enfants, lui ont expliqué qu'ils avaient 'picolé à l'auberge du coin' et décidé d'emprunter 'une autre route' pour 'éviter les contrôles routiers' et qu'ils s'étaient ainsi 'retrouvés bloqués sur la piste de ski'.",
+  url: "https://www.lanouvellerepublique.fr/a-la-une/ivre-il-emprunte-une-piste-de-ski-pour-eviter-les-controles-d-alcoolemie",
   user: User.first
 )
 post2.save!
 
 post3 = Post.new(
-  title: "Rions un brin avec la justice",
-  content: "En France, d'après la Cour de cassation (Chambre criminelle) du 16 janvier 1986, il est possible d'être condamné pour meurtre en tuant un cadavre.",
-  url: "https://www.savoir-inutile.com/otuvx4",
+  title: "Brest. Ivre, il rampe dans le faux plafond et tombe dans les toilettes des filles",
+  content: "C'était dans la nuit de samedi. Tard. Ce client du Vauban venait d'être éconduit poliment vers la porte pour cause de cuite trop avancée et, en bon filou, il était revenu par une autre porte, celle de l'hôtel. L'histoire le perd quelques minutes quand, personne ne sait trop comment, sans doute à commencer par lui, il s'est retrouvé bloqué dans une courette intérieure, à l'arrière de l'établissement. Bloqué, avec pour seule issue un conduit dans le mur, une bouche de 4 m de long. Sans doute que, sans l'excès d'éthanol, il n'y serait pas allé.",
+  url: "https://www.letelegramme.fr/finistere/brest/ivre-il-rampe-dans-le-faux-plafond-et-tombe-dans-les-toilettes-des-filles-24-10-2016-11266826.php?utm_source=rss_telegramme&utm_medium=rss&utm_campaign=rss&xtor=RSS-22",
   user: User.first
 )
 post3.save!
@@ -91,14 +90,14 @@ comment1.save!
 comment2= Comment.new(
   user: User.first,
   post: Post.first,
-  content: "J'adore!"
+  content: "J'aurais fait pareil!"
 )
 comment2.save!
 
 comment3= Comment.new(
   user: User.last,
   post: Post.last,
-  content: "J'adore!"
+  content: "C'est bon, les lardons!"
 )
 comment3.save!
 

@@ -9,21 +9,38 @@
 
 .comment-section {
   width: 60vw;
-  padding: 12px;
+  //padding: 12px;
+  margin-right: 0px;
+  margin-left: 0px;
   margin-bottom: 12px;
+  font-size: 0.8em;
 }
 
 .new-comment {
   width: 60vw;
-  padding: 12px;
+  //padding: 12px;
   margin-bottom: 12px;
+}
+
+.post-credits{
+  padding-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8em;
+}
+
+.post-content {
+  padding-bottom: 8px;
+  margin-bottom: 12px;
+  box-shadow: 0px  1px  0px  rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgb(0,0,0)
 }
 
 .comment-section {
   width: 60vh;
-  padding: 12px;
+  //padding: 12px;
   justify-content: center;
-  margin: 0 auto;
+  //margin: 0 auto;
 }
 
 .comment-preview {

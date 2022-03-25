@@ -6,8 +6,10 @@
     <div class="post-details">
       <div class= post-view>
         <div class="post-title"><%=@post.title%></div>
-        par <strong> <%=@post.user.nickname%> </strong> le <%=@post.created_at.strftime("%d.%m.%y")%>
-        <%=link_to "Article Source", @post.url%>
+        <div class= post-credits>
+          <span>par <strong> <%=@post.user.nickname%> </strong> le <%=@post.created_at.strftime("%d.%m.%y")%></span>
+          <%=link_to "Article Source", @post.url%>
+        </div>
         <div class="post-content">
           <%=@post.content%>
         </div>
@@ -15,7 +17,7 @@
           <%=@post.comments.count%> Commentaires :
           <%@post.comments.each do |comment|%>
             <div class="comment-preview">
-              <%=comment.user.nickname%> le <%=comment.created_at.strftime("%d.%m.%y")%>
+              <strong><%=comment.user.nickname%></strong> a posté le <%=comment.created_at.strftime("%d.%m.%y")%>  :
               <%=comment.content%>
             </div>
           <%end%>
@@ -23,7 +25,7 @@
         <div class= "new-comment">
           <%= simple_form_for [@post, @comment] do |f| %>
             <%= f.input :content, as: :text, label: "Ajouter votre Grain de Sel" %>
-            <%= f.submit "Commenter", class: "btn btn-ghost" %>
+            <%= f.submit "Commenter", class: "button-large" %>
           <% end %>
         </div>
       </div>
