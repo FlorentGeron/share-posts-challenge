@@ -1,6 +1,13 @@
 .navbar-lewagon {
   justify-content: space-between;
   background: $bacchus-primary;
+  margin-bottom: 12px;
+  font-family: $news-font;
+  color: white;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: white;
 }
 
 .navbar-lewagon .navbar-collapse {

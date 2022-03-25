@@ -1,6 +1,7 @@
 .post-details {
   width: 60vw;
   padding: 12px;
+  margin-top: 12px;
   margin-bottom: 12px;
   justify-content: center;
   margin: 0 auto;
@@ -17,7 +18,7 @@
 }
 
 .new-comment {
-  width: 60vw;
+  max-width: 55vw;
   //padding: 12px;
   margin-bottom: 12px;
 }
@@ -37,7 +38,7 @@
 }
 
 .comment-section {
-  width: 60vh;
+  width: 60vw;
   //padding: 12px;
   justify-content: center;
   //margin: 0 auto;
@@ -48,4 +49,8 @@
     color: #000000;
     margin-bottom: 2px;
     padding: 2px;
+}
+
+textarea.formcontrol {
+  max-width: 60vw;
 }

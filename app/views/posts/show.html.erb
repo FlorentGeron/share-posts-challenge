@@ -2,13 +2,15 @@
 
 <div class= "container">
   <div class="page-wrapper">
-    <%= link_to "Retour à la liste", posts_path%>
+    <%= link_to posts_path do%>
+      <div class="button-large">Retour</div>
+    <%end%>
     <div class="post-details">
       <div class= post-view>
         <div class="post-title"><%=@post.title%></div>
         <div class= post-credits>
           <span>par <strong> <%=@post.user.nickname%> </strong> le <%=@post.created_at.strftime("%d.%m.%y")%></span>
-          <%=link_to "Article Source", @post.url%>
+          <%=link_to "Article Source", @post.url, target: :_blank%>
         </div>
         <div class="post-content">
           <%=@post.content%>
