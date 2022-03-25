@@ -11,7 +11,8 @@ class CommentsController < ApplicationController
       redirect_to post_path(@comment.post)
       flash.alert = "Hic! Merci pour votre commentaire!"
     else
-      render 'new'
+      redirect_to post_path(@comment.post)
+      flash.alert = "Argh! Merci de REMPLIR le commentaire!"
     end
   end
 
