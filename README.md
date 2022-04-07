@@ -6,24 +6,6 @@ Dans cet exercice, vous devez implémenter des fonctionnalités dans une applica
 Vous devez créer une plateforme pour publier, commenter ou réagir à un contenu trouvé sur Internet
 ```
 
-## Setup
-
-Clonez le dépôt GitHub et exécutez les commandes habituelles vous permettant de lancer l'application sur votre ordinateur.
-
-Si vous voyez s'afficher le message `rbenv: version 3.0.3 is not installed`, exécutez la commande suivante pour installez la version de `ruby` correspondante :
-
-```bash
-rbenv install 3.0.3 && gem install bundler rubocop pry pry-byebug
-```
-
-Vous pourrez alors réexécuter les commandes habituelles vous permettant de lancer l'application.
-
-## Base de données
-
-Effectuez les modifications du code nécessaires à l'obtention du schema de données suivant :
-
-<img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/assess/share_post_db_schema.png" alt="DB schema">
-
 Un utilisateur n'est pas valide :
 
 - S'il n'a pas de pseudonyme.
@@ -63,9 +45,3 @@ Effectuez les modifications du code nécessaires à l'implémentation des parcou
 - Le formulaire de commentaire doit comporter un champ de texte multiligne pour faciliter la saisie de long commentaire. Vous pouvez vous référer à la <a href="https://github.com/heartcombo/simple_form" target="_blank">documentation de `simple_form`</a> à ce sujet.
 - Lors de la soumission d'un commentaire, l'utilisateur doit être redirigé vers la page de détails de la publication et une <a href="https://www.rubyguides.com/2019/11/rails-flash-messages/" target="_blank">notification flash</a> doit s'afficher pour confirmer la sauvegarde du commentaire.
 
-## Ressources
-
-Pour avoir une interface soignée, nous vous conseillons d'utiliser :
-
-- <a href="https://getbootstrap.com/docs/4.6/getting-started/introduction/" target="_blank">Bootstrap</a> (déjà installé)
-- <a href="https://uikit.lewagon.com/" target="_blank">L'UI Kit du Wagon</a>
